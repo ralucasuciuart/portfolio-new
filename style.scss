@@ -1,0 +1,20 @@
+$coffee: #302B27;
+$peach: #FECDAA;
+$rose: #C32F27;
+$pebble: #E3E7D3;
+@mixin poppinsreg {
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+@mixin poppinsbold {
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+@mixin epiloguereg {
+    font-family: 'Epilogue';
+    font-weight: 400;
+}
+@mixin epiloguebold {
+    font-family: 'Epilogue';
+    font-weight: 700;
+}
