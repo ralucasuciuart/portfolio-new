@@ -1,3 +1,31 @@
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+}
 
+body {
+  background-color: #e3e7d3;
+}
+body #nav_name {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 3em;
+  text-decoration: none;
+  color: #c32f27;
+  letter-spacing: -1px;
+}
+body .nav_link {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #c32f27;
+  letter-spacing: -1px;
+}
+body .nav_icon_img {
+  max-width: 20px;
+  min-width: 18px;
+  stroke: #c32f27;
+}
 
 /*# sourceMappingURL=style.css.map */

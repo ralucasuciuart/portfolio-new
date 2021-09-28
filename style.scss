@@ -1,8 +1,8 @@
-$coffee: #302B27;
-$peach: #FECDAA;
-$rose: #C32F27;
-$pebble: #E3E7D3;
-$ivory: #F9F6EA;
+$coffee: #302b27;
+$rose: #c32f27;
+$peach: #fecdaa;
+$pebble: #e3e7d3;
+$ivory: #f9f6ea;
 @mixin poppinsreg {
     font-family: 'Poppins';
     font-weight: 400;
@@ -18,4 +18,31 @@ $ivory: #F9F6EA;
 @mixin epiloguebold {
     font-family: 'Epilogue';
     font-weight: 700;
+}
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+body{
+    background-color: $pebble;
+    
+    #nav_name {
+        @include poppinsbold;
+        font-size: 3em;
+        text-decoration: none;
+        color: $rose;
+        letter-spacing: -1px;
+    }
+    .nav_link {
+        @include poppinsbold;
+        font-size: 1.5em;
+        text-decoration: none;
+        color: $rose;
+        letter-spacing: -1px;
+    }
+    .nav_icon_img {
+        max-width: 20px;
+        min-width: 18px;
+        stroke: #c32f27;
+    }
 }
