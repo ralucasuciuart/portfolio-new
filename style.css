@@ -5,25 +5,60 @@ html {
 
 body {
   background-color: #e3e7d3;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+}
+body #navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 60px;
+  top: 0;
+  left: 0;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  padding: 50px auto;
+  z-index: 99;
 }
 body #nav_name {
   font-family: "Poppins";
   font-weight: 700;
-  font-size: 3em;
+  font-size: 2.6em;
   text-decoration: none;
   color: #c32f27;
   letter-spacing: -1px;
+  padding: 0 15px;
 }
 body .nav_link {
   font-family: "Poppins";
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1.1em;
   text-decoration: none;
   color: #c32f27;
   letter-spacing: -1px;
+  padding: 0 15px;
+  height: auto;
 }
-body .nav_icon_img {
-  max-width: 20px;
+body .nav_icon {
+  text-decoration: none;
+  padding: 0 15px;
+  margin: 0;
+}
+body .nav_icon_svg {
+  stroke: #c32f27;
+  stroke-width: 1px;
+  margin: 0;
+  height: 24px;
+}
+body #header {
+  height: 100vh;
+  width: 100%;
+  padding-top: 100px;
+  margin: 0;
+  background-color: #302b27;
 }
 
 /*# sourceMappingURL=style.css.map */

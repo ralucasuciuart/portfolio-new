@@ -19,28 +19,70 @@ $ivory: #f9f6ea;
     font-family: 'Epilogue';
     font-weight: 700;
 }
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 html {
     scroll-behavior: smooth;
     width: 100%;
 }
 body{
     background-color: $pebble;
-    
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    //navbar
+    #navbar {
+        @include flex-row;
+        width: 100vw;
+        height: 60px;
+        top: 0;
+        left: 0;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        padding: 50px auto;
+        z-index: 99;
+    }
     #nav_name {
         @include poppinsbold;
-        font-size: 3em;
+        font-size: 2.6em;
         text-decoration: none;
         color: $rose;
         letter-spacing: -1px;
+        padding: 0 15px;
     }
     .nav_link {
         @include poppinsbold;
-        font-size: 1.5em;
+        font-size: 1.1em;
         text-decoration: none;
         color: $rose;
         letter-spacing: -1px;
+        padding: 0 15px;
+        height: auto;
     }
-    .nav_icon_img {
-        max-width: 20px;
+    .nav_icon {
+        text-decoration: none;
+        padding: 0 15px;
+        margin: 0;
+    }
+    .nav_icon_svg {
+        stroke: $rose;
+        stroke-width: 1px;
+        margin: 0;
+        height: 24px;
+    }
+
+
+    //header
+    #header {
+        height: 100vh;
+        width: 100%;
+        padding-top: 100px;
+        margin: 0;
+        background-color: $coffee;
+
     }
 }
