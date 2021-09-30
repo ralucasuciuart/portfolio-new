@@ -14,7 +14,7 @@ body #navbar {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100vw;
-  height: 60px;
+  height: 100px;
   top: 0;
   left: 0;
   justify-content: space-around;
@@ -40,18 +40,17 @@ body .nav_link {
   color: #c32f27;
   letter-spacing: -1px;
   padding: 0 15px;
-  height: auto;
+}
+body #nav_menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
 body .nav_icon {
   text-decoration: none;
   padding: 0 15px;
-  margin: 0;
-}
-body .nav_icon_svg {
-  stroke: #c32f27;
-  stroke-width: 1px;
-  margin: 0;
-  height: 24px;
+  color: #c32f27 !important;
 }
 body #header {
   height: 100vh;
