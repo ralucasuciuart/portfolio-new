@@ -35,7 +35,7 @@ body #nav_name {
   text-decoration: none;
   color: #c32f27;
   letter-spacing: -1px;
-  padding-right: 500px;
+  padding-right: 700px;
 }
 body .nav_link {
   font-family: "Poppins";
@@ -121,7 +121,7 @@ body #work {
   flex-wrap: wrap;
   height: 100%;
   max-width: 100%;
-  margin: 2% 0 0 5%;
+  padding: 8% 0 0 5%;
 }
 body #work_header {
   font-family: "Poppins";
@@ -131,7 +131,7 @@ body #work_header {
 }
 body #work_section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
@@ -139,7 +139,7 @@ body #work_section {
 }
 body .work_col {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;

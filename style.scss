@@ -59,7 +59,7 @@ body{
         text-decoration: none;
         color: $rose;
         letter-spacing: -1px;
-        padding-right: 500px;
+        padding-right: 700px;
     }
     .nav_link {
         @include poppinsbold;
@@ -136,7 +136,7 @@ body{
         @include flex-col;
         height: 100%;
         max-width: 100%;
-        margin: 2% 0 0 5%;
+        padding: 8% 0 0 5%;
     }
     #work_header {
         @include poppinsbold;
@@ -144,13 +144,13 @@ body{
         font-size: 1.5em;
     }
     #work_section {
-        @include flex-row;
+        @include flex-col;
         align-items: flex-start;
         justify-content: center;
         margin: 0 auto;
     }
     .work_col {
-        @include flex-col;
+        @include flex-row;
         justify-content: center;
         align-items: flex-start;
     }
