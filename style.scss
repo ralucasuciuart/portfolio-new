@@ -149,7 +149,7 @@ body{
         justify-content: center;
         margin: 0 auto;
     }
-    .work_col {
+    .work_row {
         @include flex-row;
         justify-content: center;
         align-items: flex-start;

@@ -137,7 +137,7 @@ body #work_section {
   justify-content: center;
   margin: 0 auto;
 }
-body .work_col {
+body .work_row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
