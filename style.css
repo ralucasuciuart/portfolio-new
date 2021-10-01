@@ -30,7 +30,7 @@ body #nav_name {
   text-decoration: none;
   color: #c32f27;
   letter-spacing: -1px;
-  padding: 0 15px;
+  padding: 0 500px 0 0;
 }
 body .nav_link {
   font-family: "Poppins";
@@ -57,7 +57,7 @@ body #header {
   width: 100%;
   padding-top: 100px;
   margin: 0;
-  background-color: #302b27;
+  background: #302b27 url(media/loop.svg) no-repeat 25% 0%;
 }
 
 /*# sourceMappingURL=style.css.map */
