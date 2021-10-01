@@ -137,6 +137,7 @@ body{
         height: 100%;
         max-width: 100%;
         padding: 8% 0 0 5%;
+        margin-bottom: 10%;
     }
     #work_header {
         @include poppinsbold;
@@ -162,5 +163,43 @@ body{
         width: 400px;
         height: auto;
         object-fit: cover;
+    }
+    // contact 
+    #contact {
+        @include flex-col;
+        height: 100vh;
+        max-width: 100%;
+        background-color: $rose;
+        justify-content: space-evenly;
+        padding: 8% 0 0 5%;
+    }
+    #contact_header {
+        @include poppinsbold;
+        color: $peach;
+        font-size: 1.5em;
+    }
+    .contact_text {
+        @include epiloguebold;
+        font-size: 1.7em;
+        color: $peach;
+        margin: 10px 0;
+    }
+    #contact_icons {
+        @include flex-row;
+        align-items: center;
+        width: 100%;
+        padding: 50px 0 20px 0;
+    }
+    .contact_svg {
+        text-decoration: none;
+        padding-right: 20px;
+        color: $ivory;
+        transition: all .3s ease;
+    }
+    #contact_email {
+        @include epiloguereg;
+        color: $ivory;
+        text-decoration: none;
+        font-size: 0.9em;
     }
 }

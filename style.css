@@ -122,6 +122,7 @@ body #work {
   height: 100%;
   max-width: 100%;
   padding: 8% 0 0 5%;
+  margin-bottom: 10%;
 }
 body #work_header {
   font-family: "Poppins";
@@ -152,6 +153,50 @@ body .work_image {
   width: 400px;
   height: auto;
   object-fit: cover;
+}
+body #contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+  max-width: 100%;
+  background-color: #c32f27;
+  justify-content: space-evenly;
+  padding: 8% 0 0 5%;
+}
+body #contact_header {
+  font-family: "Poppins";
+  font-weight: 700;
+  color: #fecdaa;
+  font-size: 1.5em;
+}
+body .contact_text {
+  font-family: "Epilogue";
+  font-weight: 700;
+  font-size: 1.7em;
+  color: #fecdaa;
+  margin: 10px 0;
+}
+body #contact_icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0 20px 0;
+}
+body .contact_svg {
+  text-decoration: none;
+  padding-right: 20px;
+  color: #f9f6ea;
+  transition: all 0.3s ease;
+}
+body #contact_email {
+  font-family: "Epilogue";
+  font-weight: 400;
+  color: #f9f6ea;
+  text-decoration: none;
+  font-size: 0.9em;
 }
 
 /*# sourceMappingURL=style.css.map */
