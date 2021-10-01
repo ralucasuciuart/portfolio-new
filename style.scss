@@ -24,6 +24,12 @@ $ivory: #f9f6ea;
     flex-direction: row;
     flex-wrap: wrap;
 }
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
 html {
     scroll-behavior: smooth;
     width: 100%;
@@ -43,7 +49,6 @@ body{
         justify-content: space-around;
         align-items: center;
         position: fixed;
-        padding: 50px auto;
         z-index: 99;
     }
     #nav_name {
@@ -52,7 +57,7 @@ body{
         text-decoration: none;
         color: $rose;
         letter-spacing: -1px;
-        padding: 0 500px 0 0;
+        padding-right: 500px;
     }
     .nav_link {
         @include poppinsbold;
@@ -73,10 +78,44 @@ body{
     }
     //header
     #header {
-        height: 100vh;
+        @include flex-col;
+        justify-content: center;
+        height: 85vh;
         width: 100%;
-        padding-top: 100px;
-        margin: 0;
+        margin: 0 auto;
         background: $coffee url(media/loop.svg) no-repeat 25% 0%;
+    }
+    #header_title {
+        @include epiloguereg;
+        color: $ivory;
+        max-width: 40%;
+        text-align: center;
+        font-size: 2em;
+        line-height: 1.2em;
+    }
+    #header_links {
+        @include flex-row;
+        @include epiloguebold;
+        font-size: 1em;
+    }
+    #header_link_work {
+        text-decoration: none;
+        color: $ivory;
+        padding: 5px;
+        transition: all .3s ease;
+    }
+    #header_link_work:hover {
+        color: $rose;
+        transition: all .3s ease;
+    }
+    #header_link_contact {
+        text-decoration: none;
+        color: $rose;
+        padding: 5px;
+        transition: all .3s ease;
+    }
+    #header_link_contact:hover {
+        color: $ivory;
+        transition: all .3s ease;
     }
 }

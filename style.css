@@ -20,7 +20,6 @@ body #navbar {
   justify-content: space-around;
   align-items: center;
   position: fixed;
-  padding: 50px auto;
   z-index: 99;
 }
 body #nav_name {
@@ -30,7 +29,7 @@ body #nav_name {
   text-decoration: none;
   color: #c32f27;
   letter-spacing: -1px;
-  padding: 0 500px 0 0;
+  padding-right: 500px;
 }
 body .nav_link {
   font-family: "Poppins";
@@ -53,11 +52,52 @@ body .nav_icon {
   color: #c32f27 !important;
 }
 body #header {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
   width: 100%;
-  padding-top: 100px;
-  margin: 0;
+  margin: 0 auto;
   background: #302b27 url(media/loop.svg) no-repeat 25% 0%;
+}
+body #header_title {
+  font-family: "Epilogue";
+  font-weight: 400;
+  color: #f9f6ea;
+  max-width: 40%;
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.2em;
+}
+body #header_links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: "Epilogue";
+  font-weight: 700;
+  font-size: 1em;
+}
+body #header_link_work {
+  text-decoration: none;
+  color: #f9f6ea;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+body #header_link_work:hover {
+  color: #c32f27;
+  transition: all 0.3s ease;
+}
+body #header_link_contact {
+  text-decoration: none;
+  color: #c32f27;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+body #header_link_contact:hover {
+  color: #f9f6ea;
+  transition: all 0.3s ease;
 }
 
 /*# sourceMappingURL=style.css.map */
