@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
   width: 100%;
@@ -8,6 +12,8 @@ body {
   overflow-y: scroll;
   margin: 0;
   padding: 0;
+  width: 100vw;
+  max-width: 100%;
 }
 body #navbar {
   display: flex;
@@ -39,6 +45,11 @@ body .nav_link {
   color: #c32f27;
   letter-spacing: -1px;
   padding: 0 15px;
+  transition: all 0.3s ease;
+}
+body .nav_link:hover {
+  color: #f9f6ea;
+  transition: all 0.3s ease;
 }
 body #nav_menu {
   display: flex;
@@ -49,7 +60,12 @@ body #nav_menu {
 body .nav_icon {
   text-decoration: none;
   padding: 0 15px;
-  color: #c32f27 !important;
+  color: #c32f27;
+  transition: all 0.3s ease;
+}
+body .nav_icon .nav_icon_svg:hover {
+  color: #f9f6ea;
+  transition: all 0.3s ease;
 }
 body #header {
   display: flex;
@@ -57,10 +73,10 @@ body #header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 85vh;
-  width: 100%;
+  height: 100vh;
+  max-width: 100%;
   margin: 0 auto;
-  background: #302b27 url(media/loop.svg) no-repeat 25% 0%;
+  background: #302b27 url(media/loop.svg) no-repeat 20% 0%;
 }
 body #header_title {
   font-family: "Epilogue";
@@ -103,8 +119,8 @@ body #work {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100%;
-  height: 100vh;
+  height: 100%;
+  max-width: 100%;
   margin: 2% 0 0 5%;
 }
 body #work_header {
@@ -112,6 +128,30 @@ body #work_header {
   font-weight: 700;
   color: #302b27;
   font-size: 1.5em;
+}
+body #work_section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+}
+body .work_col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+body .work_post {
+  cursor: pointer;
+}
+body .work_image {
+  display: block;
+  width: 400px;
+  height: auto;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
