@@ -174,14 +174,13 @@ body .text_form_wrap {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 body #contact_header {
   font-family: "Poppins";
   font-weight: 700;
   color: #fecdaa;
   font-size: 1.5em;
-  padding-bottom: 100px;
   margin: 0;
 }
 body .contact_text {
@@ -199,11 +198,15 @@ body #contact_icons {
   align-items: center;
   justify-content: space-between;
   width: 30%;
-  padding: 70px 0 10px 0;
+  padding: 70px 0 20px 0;
 }
 body .contact_svg {
   text-decoration: none;
   color: #f9f6ea;
+  transition: all 0.3s ease;
+}
+body .contact_svg:hover {
+  color: #fecdaa;
   transition: all 0.3s ease;
 }
 body #contact_email {
@@ -212,24 +215,67 @@ body #contact_email {
   color: #f9f6ea;
   text-decoration: none;
   font-size: 0.9em;
+  transition: all 0.3s ease;
+}
+body #contact_email:hover {
+  color: #fecdaa;
+  transition: all 0.3s ease;
 }
 body #form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #f9f6ea;
   padding: 30px;
+  margin: 0;
   border-radius: 10px;
   width: 400px;
-  height: auto;
+  height: 100%;
 }
 body #form_title {
   font-family: "Epilogue";
   font-weight: 700;
   color: #302b27;
   font-size: 1.3em;
+}
+body .input {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 0.8em;
+  color: #302b27;
+  padding: 10px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 15px;
+  background: #e3e7d3;
+  width: 90%;
+}
+body #textarea {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 0.8em;
+  color: #302b27;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 15px;
+  background: #e3e7d3;
+  width: 90%;
+  height: 160px;
+}
+body #send_btn {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 1em;
+  color: #f9f6ea;
+  padding: 10px 25px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: #c32f27;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

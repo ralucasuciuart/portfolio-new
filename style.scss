@@ -181,13 +181,12 @@ body{
     .text_form_wrap {
         @include flex-row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     #contact_header {
         @include poppinsbold;
         color: $peach;
         font-size: 1.5em;
-        padding-bottom: 100px;
         margin: 0;
     }
     .contact_text {
@@ -202,11 +201,15 @@ body{
         align-items: center;
         justify-content: space-between;
         width: 30%;
-        padding: 70px 0 10px 0;
+        padding: 70px 0 20px 0;
     }
     .contact_svg {
         text-decoration: none;
         color: $ivory;
+        transition: all .3s ease;
+    }
+    .contact_svg:hover {
+        color: $peach;
         transition: all .3s ease;
     }
     #contact_email {
@@ -214,21 +217,61 @@ body{
         color: $ivory;
         text-decoration: none;
         font-size: 0.9em;
+        transition: all .3s ease;
+    }
+    #contact_email:hover {
+        color: $peach;
+        transition: all .3s ease;
     }
     //form
     #form {
         @include flex-col;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         background-color: $ivory;
         padding: 30px;
+        margin: 0;
         border-radius: 10px;
         width: 400px;
-        height: auto;
+        height: 100%;
     }
     #form_title {
         @include epiloguebold;
         color: $coffee;
         font-size: 1.3em;
+    }
+    .input {
+        @include poppinsreg;
+        font-size: 0.8em;
+        color: $coffee;
+        padding: 10px;
+        margin: 10px auto;
+        border: none;
+        border-radius: 15px;
+        background: $pebble;
+        width: 90%;
+    }
+    #textarea {
+        @include poppinsreg;
+        font-size: 0.8em;
+        color: $coffee;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 15px;
+        background: $pebble;
+        width: 90%;
+        height: 160px;
+    }
+    #send_btn {
+        @include poppinsbold;
+        font-size: 1em;
+        color: $ivory;
+        padding: 10px 25px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 50px;
+        background-color: $rose;
+        cursor: pointer;
     }
 }
