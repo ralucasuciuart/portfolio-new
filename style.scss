@@ -167,9 +167,9 @@ body{
     // contact 
     #contact {
         @include flex-col;
+        background-color: $rose;
         height: 100vh;
         max-width: 100%;
-        background-color: $rose;
         justify-content: space-between;
         padding: 8% 0 0 5%;
         margin: 0;
@@ -181,6 +181,7 @@ body{
     .text_form_wrap {
         @include flex-row;
         align-items: center;
+        justify-content: space-between;
     }
     #contact_header {
         @include poppinsbold;
@@ -215,5 +216,19 @@ body{
         font-size: 0.9em;
     }
     //form
-
+    #form {
+        @include flex-col;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $ivory;
+        padding: 30px;
+        border-radius: 10px;
+        width: 400px;
+        height: auto;
+    }
+    #form_title {
+        @include epiloguebold;
+        color: $coffee;
+        font-size: 1.3em;
+    }
 }
