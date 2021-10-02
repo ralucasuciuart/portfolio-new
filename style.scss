@@ -170,29 +170,41 @@ body{
         height: 100vh;
         max-width: 100%;
         background-color: $rose;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding: 8% 0 0 5%;
+        margin: 0;
+    }
+    .contact_wrap {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .text_form_wrap {
+        @include flex-row;
+        align-items: center;
     }
     #contact_header {
         @include poppinsbold;
         color: $peach;
         font-size: 1.5em;
+        padding-bottom: 100px;
+        margin: 0;
     }
     .contact_text {
         @include epiloguebold;
-        font-size: 1.7em;
+        font-size: 2em;
         color: $peach;
-        margin: 10px 0;
+        padding: 5px 0;
+        margin: 0;
     }
     #contact_icons {
         @include flex-row;
         align-items: center;
-        width: 100%;
-        padding: 50px 0 20px 0;
+        justify-content: space-between;
+        width: 30%;
+        padding: 70px 0 10px 0;
     }
     .contact_svg {
         text-decoration: none;
-        padding-right: 20px;
         color: $ivory;
         transition: all .3s ease;
     }
@@ -202,4 +214,6 @@ body{
         text-decoration: none;
         font-size: 0.9em;
     }
+    //form
+
 }

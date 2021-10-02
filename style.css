@@ -161,33 +161,47 @@ body #contact {
   height: 100vh;
   max-width: 100%;
   background-color: #c32f27;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 8% 0 0 5%;
+  margin: 0;
+}
+body .contact_wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+body .text_form_wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
 body #contact_header {
   font-family: "Poppins";
   font-weight: 700;
   color: #fecdaa;
   font-size: 1.5em;
+  padding-bottom: 100px;
+  margin: 0;
 }
 body .contact_text {
   font-family: "Epilogue";
   font-weight: 700;
-  font-size: 1.7em;
+  font-size: 2em;
   color: #fecdaa;
-  margin: 10px 0;
+  padding: 5px 0;
+  margin: 0;
 }
 body #contact_icons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  width: 100%;
-  padding: 50px 0 20px 0;
+  justify-content: space-between;
+  width: 30%;
+  padding: 70px 0 10px 0;
 }
 body .contact_svg {
   text-decoration: none;
-  padding-right: 20px;
   color: #f9f6ea;
   transition: all 0.3s ease;
 }
