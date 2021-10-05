@@ -216,7 +216,7 @@ body{
         @include epiloguereg;
         color: $ivory;
         text-decoration: none;
-        font-size: 0.9em;
+        font-size: 1em;
         transition: all .3s ease;
     }
     #contact_email:hover {
@@ -273,5 +273,83 @@ body{
         border-radius: 50px;
         background-color: $rose;
         cursor: pointer;
+    }
+    // footer
+    #footer {
+        @include flex-row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 40vh;
+        width: 100%;
+        background-color: $coffee;
+        margin-top: 15em;
+    }
+    #footer_section_1 {
+        @include flex-row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #footer_name {
+        @include poppinsbold;
+        text-decoration: none;
+        color: $ivory;
+        font-size: 1.7em;
+        margin: 0;
+    }
+    #footer_divider {
+        border-left: 1px solid rgba($color: #f9f6ea, $alpha: 0.5);
+        height: 7em;
+        margin: 0 2em;
+    }
+    #footer_menu {
+        @include flex-col;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    #footer_menu_links {
+        @include flex-row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer_link, #footer_credits {
+        @include poppinsreg;
+        text-decoration: none;
+        color: rgba($color: #f9f6ea, $alpha: 0.5);
+        font-size: .9em;
+        margin: 0 1em 0 0;
+        transition: all .3s ease;
+    }
+    .footer_link:hover {
+        color: $ivory;
+        transition: all .3s ease;
+    }
+    #footer_section_2 {
+        @include flex-col;
+        align-items: flex-start;
+    }
+    #footer_icons {
+        @include flex-row;
+        justify-content: space-between;
+    }
+    .footer_svg {
+        text-decoration: none;
+        color: $ivory;
+        margin: 0 2em 1em 0;
+        transition: all .3s ease;
+    }
+    .footer_svg:hover {
+        color: $rose;
+        transition: all .3s ease;
+    }
+    #footer_email {
+        @include poppinsreg;
+        font-size: .9em;
+        text-decoration: none;
+        color: $ivory;
+        transition: all .3s ease;
+    }
+    #footer_email:hover {
+        color: $rose;
+        transition: all .3s ease;
     }
 }
