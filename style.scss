@@ -35,7 +35,7 @@ html {
     width: 100%;
 }
 body{
-    background-color: $third;
+    background-color: $second;
     overflow-y: scroll;
     margin: 0;
     padding: 0;
@@ -166,7 +166,7 @@ body{
         @include flex-col;
         height: 100%;
         max-width: 100%;
-        padding: 8% 0 10% 5%;
+        padding: 8% 0 0 5%;
         background-color: $main;
     }
     #work_header {
@@ -226,6 +226,34 @@ body{
     .work_post:hover .work_image_text {
         opacity: 1;
         transition: all .3s ease;
+    }
+    // tools 
+    #tools {
+        @include flex-col;
+        max-width: 100%;
+        justify-content: space-between;
+        padding: 8% 0 0 5%;
+        background: $second;
+    }
+    #tools_header {
+        @include poppinsbold;
+        color: $main;
+        font-size: 1.5em;
+        margin: 0;
+    }
+    #tools_wrap {
+        @include flex-col;
+        width: 1200px;
+        margin: 0 auto 60px auto;
+    }
+    #tools_list_1, #tools_list_2 {
+        @include flex-row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .tools_svg {
+        color: $main;
     }
     // contact 
     #contact {
