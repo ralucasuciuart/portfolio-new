@@ -83,10 +83,10 @@ body{
         padding: 0 15px;
         color: $rose;
         transition: all .3s ease;
+    }
     .nav_icon_svg:hover {
         color: $ivory;
         transition: all .3s ease;
-    }
     }
     //header
     #header {
@@ -96,7 +96,9 @@ body{
         height: 100vh;
         max-width: 100%;
         margin: 0 auto;
-        background: $coffee url(media/loop.svg) no-repeat 20% 0%;
+        background: $coffee url(media/blob.png) no-repeat 50% 100%;
+        background-size: 100%;
+        background-attachment: fixed;
     }
     #header_title {
         @include epiloguereg;

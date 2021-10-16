@@ -63,7 +63,7 @@ body .nav_icon {
   color: #c32f27;
   transition: all 0.3s ease;
 }
-body .nav_icon .nav_icon_svg:hover {
+body .nav_icon_svg:hover {
   color: #f9f6ea;
   transition: all 0.3s ease;
 }
@@ -76,7 +76,9 @@ body #header {
   height: 100vh;
   max-width: 100%;
   margin: 0 auto;
-  background: #302b27 url(media/loop.svg) no-repeat 20% 0%;
+  background: #302b27 url(media/blob.png) no-repeat 50% 100%;
+  background-size: 100%;
+  background-attachment: fixed;
 }
 body #header_title {
   font-family: "Epilogue";
