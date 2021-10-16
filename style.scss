@@ -183,7 +183,7 @@ body{
     .text_form_wrap {
         @include flex-row;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     #contact_header {
         @include poppinsbold;
@@ -192,7 +192,7 @@ body{
         margin: 0;
     }
     .contact_text {
-        @include epiloguebold;
+        @include epiloguereg;
         font-size: 2em;
         color: $third;
         padding: 5px 0;
@@ -202,8 +202,8 @@ body{
         @include flex-row;
         align-items: center;
         justify-content: space-between;
-        width: 30%;
-        padding: 70px 0 20px 0;
+        width: 40%;
+        padding: 50px 0 20px 0;
     }
     .contact_svg {
         text-decoration: none;
@@ -284,12 +284,13 @@ body{
     // footer
     #footer {
         @include flex-row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         height: 30vh;
         width: 100%;
         background-color: $main;
         margin-top: 20em;
+        padding: 0 15%;
     }
     #footer_section_1 {
         @include flex-row;

@@ -176,7 +176,7 @@ body .text_form_wrap {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 body #contact_header {
   font-family: "Poppins";
@@ -187,7 +187,7 @@ body #contact_header {
 }
 body .contact_text {
   font-family: "Epilogue";
-  font-weight: 700;
+  font-weight: 400;
   font-size: 2em;
   color: #F2EFE9;
   padding: 5px 0;
@@ -199,8 +199,8 @@ body #contact_icons {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  width: 30%;
-  padding: 70px 0 20px 0;
+  width: 40%;
+  padding: 50px 0 20px 0;
 }
 body .contact_svg {
   text-decoration: none;
@@ -288,12 +288,13 @@ body #footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   height: 30vh;
   width: 100%;
   background-color: #161718;
   margin-top: 20em;
+  padding: 0 15%;
 }
 body #footer_section_1 {
   display: flex;
