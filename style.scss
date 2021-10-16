@@ -1,8 +1,8 @@
-$coffee: #302b27;
-$rose: #c32f27;
-$peach: #fecdaa;
-$pebble: #e3e7d3;
-$ivory: #f9f6ea;
+$main: #161718;
+$second: #FFC49B;
+$third: #F2EFE9;
+$fourth: #FBFBFB;
+
 @mixin poppinsreg {
     font-family: 'Poppins';
     font-weight: 400;
@@ -35,7 +35,7 @@ html {
     width: 100%;
 }
 body{
-    background-color: $pebble;
+    background-color: $third;
     overflow-y: scroll;
     margin: 0;
     padding: 0;
@@ -57,7 +57,7 @@ body{
         @include poppinsbold;
         font-size: 2.6em;
         text-decoration: none;
-        color: $rose;
+        color: $second;
         letter-spacing: -1px;
         padding-right: 700px;
     }
@@ -65,13 +65,13 @@ body{
         @include poppinsbold;
         font-size: 1.1em;
         text-decoration: none;
-        color: $rose;
+        color: $second;
         letter-spacing: -1px;
         padding: 0 15px;
         transition: all .3s ease;
     }
     .nav_link:hover {
-        color: $ivory;
+        color: $fourth;
         transition: all .3s ease;
     }
     #nav_menu {
@@ -81,11 +81,11 @@ body{
     .nav_icon {
         text-decoration: none;
         padding: 0 15px;
-        color: $rose;
+        color: $second;
         transition: all .3s ease;
     }
     .nav_icon_svg:hover {
-        color: $ivory;
+        color: $fourth;
         transition: all .3s ease;
     }
     //header
@@ -96,13 +96,13 @@ body{
         height: 100vh;
         max-width: 100%;
         margin: 0 auto;
-        background: $coffee url(media/blob.png) no-repeat 50% 100%;
+        background: $main url(media/blob.png) no-repeat 50% 100%;
         background-size: 100%;
         background-attachment: fixed;
     }
     #header_title {
         @include epiloguereg;
-        color: $ivory;
+        color: $fourth;
         max-width: 40%;
         text-align: center;
         font-size: 2em;
@@ -115,22 +115,22 @@ body{
     }
     #header_link_work {
         text-decoration: none;
-        color: $ivory;
+        color: $fourth;
         padding: 5px;
         transition: all .3s ease;
     }
     #header_link_work:hover {
-        color: $rose;
+        color: $second;
         transition: all .3s ease;
     }
     #header_link_contact {
         text-decoration: none;
-        color: $rose;
+        color: $second;
         padding: 5px;
         transition: all .3s ease;
     }
     #header_link_contact:hover {
-        color: $ivory;
+        color: $fourth;
         transition: all .3s ease;
     }
     // work
@@ -143,7 +143,7 @@ body{
     }
     #work_header {
         @include poppinsbold;
-        color: $coffee;
+        color: $third;
         font-size: 1.5em;
     }
     #work_section {
@@ -169,12 +169,12 @@ body{
     // contact 
     #contact {
         @include flex-col;
-        background-color: $rose;
-        height: 100vh;
+        height: 80vh;
         max-width: 100%;
         justify-content: space-between;
         padding: 8% 0 0 5%;
         margin: 0;
+        background: $main;
     }
     .contact_wrap {
         width: 1200px;
@@ -187,14 +187,14 @@ body{
     }
     #contact_header {
         @include poppinsbold;
-        color: $peach;
+        color: $third;
         font-size: 1.5em;
         margin: 0;
     }
     .contact_text {
         @include epiloguebold;
         font-size: 2em;
-        color: $peach;
+        color: $third;
         padding: 5px 0;
         margin: 0;
     }
@@ -207,84 +207,89 @@ body{
     }
     .contact_svg {
         text-decoration: none;
-        color: $ivory;
+        color: $second;
         transition: all .3s ease;
     }
     .contact_svg:hover {
-        color: $peach;
+        color: $third;
         transition: all .3s ease;
     }
     #contact_email {
         @include epiloguereg;
-        color: $ivory;
+        color: $second;
         text-decoration: none;
         font-size: 1em;
         transition: all .3s ease;
     }
     #contact_email:hover {
-        color: $peach;
+        color: $third;
         transition: all .3s ease;
     }
     //form
     #form {
         @include flex-col;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        background-color: $ivory;
-        padding: 30px;
+        background: $fourth;
         margin: 0;
-        border-radius: 10px;
+        border-radius: 30px;
         width: 400px;
-        height: 100%;
+        height: 500px;
+        box-shadow: 0 0 15px rgba($main, 0.5);
     }
     #form_title {
         @include epiloguebold;
-        color: $coffee;
+        color: $main;
         font-size: 1.3em;
     }
     .input {
         @include poppinsreg;
         font-size: 0.8em;
-        color: $coffee;
+        color: $main;
         padding: 10px;
         margin: 10px auto;
         border: none;
         border-radius: 15px;
-        background: $pebble;
-        width: 90%;
+        background: $third;
+        width: 80%;
     }
     #textarea {
         @include poppinsreg;
         font-size: 0.8em;
-        color: $coffee;
+        color: $main;
         padding: 10px;
         margin: 10px 0;
         border: none;
         border-radius: 15px;
-        background: $pebble;
-        width: 90%;
+        background: $third;
+        width: 80%;
         height: 160px;
     }
     #send_btn {
         @include poppinsbold;
         font-size: 1em;
-        color: $ivory;
+        color: $main;
         padding: 10px 25px;
-        margin-top: 20px;
+        margin: 20px auto 30px auto;
         border: none;
         border-radius: 50px;
-        background-color: $rose;
+        background-color: $second;
         cursor: pointer;
+        transition: all .3s ease;
+    }
+    #send_btn:hover {
+        background-color: #FFD3B5;
+        transition: all .3s ease;
     }
     // footer
     #footer {
         @include flex-row;
         justify-content: space-evenly;
         align-items: center;
-        height: 40vh;
+        height: 30vh;
         width: 100%;
-        background-color: $coffee;
-        margin-top: 15em;
+        background-color: $main;
+        margin-top: 20em;
     }
     #footer_section_1 {
         @include flex-row;
@@ -294,12 +299,12 @@ body{
     #footer_name {
         @include poppinsbold;
         text-decoration: none;
-        color: $ivory;
+        color: $third;
         font-size: 1.7em;
         margin: 0;
     }
     #footer_divider {
-        border-left: 1px solid rgba($color: #f9f6ea, $alpha: 0.5);
+        border-left: 1px solid rgba($third, $alpha: 0.5);
         height: 7em;
         margin: 0 2em;
     }
@@ -313,16 +318,21 @@ body{
         justify-content: space-between;
         align-items: center;
     }
-    .footer_link, #footer_credits {
+    .footer_link,#footer_repo {
         @include poppinsreg;
         text-decoration: none;
-        color: rgba($color: #f9f6ea, $alpha: 0.5);
+        color: rgba($third, $alpha: 0.5);
         font-size: .9em;
-        margin: 0 1em 0 0;
+        margin: .2em;
+        text-decoration: none;
         transition: all .3s ease;
     }
     .footer_link:hover {
-        color: $ivory;
+        color: $third;
+        transition: all .3s ease;
+    }
+    #footer_repo:hover {
+        color: $third;
         transition: all .3s ease;
     }
     #footer_section_2 {
@@ -335,23 +345,23 @@ body{
     }
     .footer_svg {
         text-decoration: none;
-        color: $ivory;
+        color: $third;
         margin: 0 2em 1em 0;
         transition: all .3s ease;
     }
     .footer_svg:hover {
-        color: $rose;
+        color: $second;
         transition: all .3s ease;
     }
     #footer_email {
         @include poppinsreg;
         font-size: .9em;
         text-decoration: none;
-        color: $ivory;
+        color: $third;
         transition: all .3s ease;
     }
     #footer_email:hover {
-        color: $rose;
+        color: $second;
         transition: all .3s ease;
     }
 }
