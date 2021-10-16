@@ -292,13 +292,21 @@
         </section>
     </footer>
 
-    <a href="" id="top_btn">
-        <svg width="27" height="42" viewBox="0 0 27 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.3 1.5L26.1 14.3M13.3 1.5L0.5 14.3M13.3 1.5V41.5" stroke="currentColor" stroke-width="2" />
+    <div onclick="goToTop()" id="top_btn">
+        <svg width="21" height="29" viewBox="0 0 21 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M3.00763 11.623C2.37679 12.2539 1.35398 12.2539 0.723135 11.623C0.0922882 10.9922 0.0922883 9.96937 0.723135 9.33852L9.33852 0.723135C9.96937 0.0922882 10.9922 0.0922883 11.623 0.723135L20.2384 9.33852C20.8693 9.96937 20.8693 10.9922 20.2384 11.623C19.6076 12.2539 18.5848 12.2539 17.9539 11.623L12.0962 5.76527L12.0962 26.6346C12.0962 27.5268 11.3729 28.25 10.4808 28.25C9.58862 28.25 8.86538 27.5268 8.86538 26.6346L8.86538 5.76527L3.00763 11.623Z"
+                fill="currentColor" />
         </svg>
-    </a>
+    </div>
 
-    <script src="index.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+        function goToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 </html>
