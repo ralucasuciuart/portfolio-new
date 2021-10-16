@@ -27,6 +27,7 @@ body #navbar {
   align-items: center;
   position: fixed;
   z-index: 99;
+  background: #161718;
 }
 body #nav_name {
   font-family: "Poppins";
@@ -80,6 +81,23 @@ body #header {
   background-size: 100%;
   background-attachment: fixed;
 }
+body #header_wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+body #header_text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
 body #header_title {
   font-family: "Epilogue";
   font-weight: 400;
@@ -117,14 +135,39 @@ body #header_link_contact:hover {
   color: #FBFBFB;
   transition: all 0.3s ease;
 }
+body #scroll_mouse {
+  text-decoration: none;
+  color: #FFC49B;
+  margin: 5% auto 0 auto;
+  width: 42px;
+  animation: scroll 3s infinite linear;
+}
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(30px);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
 body #work {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   height: 100%;
   max-width: 100%;
-  padding: 8% 0 0 5%;
-  margin-bottom: 10%;
+  padding: 8% 0 10% 5%;
+  background-color: #161718;
 }
 body #work_header {
   font-family: "Poppins";
@@ -147,14 +190,13 @@ body .work_row {
   justify-content: center;
   align-items: flex-start;
 }
-body .work_post {
-  cursor: pointer;
-}
 body .work_image {
   display: block;
   width: 400px;
   height: auto;
   object-fit: cover;
+  padding: 20px;
+  margin: 0;
 }
 body #contact {
   display: flex;

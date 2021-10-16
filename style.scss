@@ -52,6 +52,7 @@ body{
         align-items: center;
         position: fixed;
         z-index: 99;
+        background: $main;
     }
     #nav_name {
         @include poppinsbold;
@@ -100,6 +101,19 @@ body{
         background-size: 100%;
         background-attachment: fixed;
     }
+    #header_wrap {
+        @include flex-col;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        }
+    #header_text {
+        @include flex-col;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
     #header_title {
         @include epiloguereg;
         color: $fourth;
@@ -133,13 +147,27 @@ body{
         color: $fourth;
         transition: all .3s ease;
     }
+    #scroll_mouse{
+        text-decoration: none;
+        color: $second;
+        margin: 5% auto 0 auto;
+        width: 42px;
+        animation: scroll 3s infinite linear;
+    }
+
+    @keyframes scroll {
+        0% {transform: translateY(0); opacity: 0;}
+        25% {transform: translateY(30px); opacity: 1;}
+        75% {transform: translateY(30px); opacity: 0;}
+        100% {transform: translateY(0); opacity: 0;}
+    }
     // work
     #work {
         @include flex-col;
         height: 100%;
         max-width: 100%;
-        padding: 8% 0 0 5%;
-        margin-bottom: 10%;
+        padding: 8% 0 10% 5%;
+        background-color: $main;
     }
     #work_header {
         @include poppinsbold;
@@ -157,14 +185,16 @@ body{
         justify-content: center;
         align-items: flex-start;
     }
-    .work_post {
-        cursor: pointer;
-    }
+    // .work_post {
+    //     cursor: pointer;
+    // }
     .work_image {
         display: block;
         width: 400px;
         height: auto;
         object-fit: cover;
+        padding: 20px;
+        margin: 0;
     }
     // contact 
     #contact {
