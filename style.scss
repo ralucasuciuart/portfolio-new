@@ -246,6 +246,12 @@ body{
         width: 1200px;
         margin: 0 auto 60px auto;
     }
+    #tools_list {
+        @include flex-col;
+        width: 800px;
+        margin: auto;
+        padding: 0;
+    }
     #tools_list_1, #tools_list_2 {
         @include flex-row;
         justify-content: space-around;

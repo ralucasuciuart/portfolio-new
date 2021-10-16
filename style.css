@@ -256,6 +256,14 @@ body #tools_wrap {
   width: 1200px;
   margin: 0 auto 60px auto;
 }
+body #tools_list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: auto;
+  padding: 0;
+}
 body #tools_list_1, body #tools_list_2 {
   display: flex;
   flex-direction: row;
