@@ -35,7 +35,6 @@ body #nav_name {
   font-size: 2.6em;
   text-decoration: none;
   color: #FFBAAB;
-  letter-spacing: -1px;
   padding-right: 700px;
 }
 body .nav_link {
@@ -44,7 +43,6 @@ body .nav_link {
   font-size: 1.1em;
   text-decoration: none;
   color: #FFBAAB;
-  letter-spacing: -1px;
   padding: 0 15px;
   transition: all 0.3s ease;
 }
@@ -99,7 +97,7 @@ body #header_text {
   margin: 0;
 }
 body #header_title {
-  font-family: "Epilogue";
+  font-family: "Poppins";
   font-weight: 400;
   color: #FBFBFB;
   max-width: 40%;
@@ -111,7 +109,7 @@ body #header_links {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  font-family: "Epilogue";
+  font-family: "Poppins";
   font-weight: 700;
   font-size: 1em;
 }
@@ -140,6 +138,7 @@ body #scroll_mouse {
   color: #FFBAAB;
   margin: 5% auto 0 auto;
   width: 42px;
+  transition: all 0.3s ease;
   animation: scroll 3s infinite linear;
 }
 @keyframes scroll {
@@ -159,6 +158,10 @@ body #scroll_mouse {
     transform: translateY(0);
     opacity: 0;
   }
+}
+body #scroll_mouse:hover {
+  color: #F2EFE9;
+  transition: all 0.3s ease;
 }
 body #work {
   display: flex;
@@ -305,7 +308,7 @@ body #contact_header {
   margin: 0;
 }
 body .contact_text {
-  font-family: "Epilogue";
+  font-family: "Poppins";
   font-weight: 400;
   font-size: 2em;
   color: #F2EFE9;
@@ -331,7 +334,7 @@ body .contact_svg:hover {
   transition: all 0.3s ease;
 }
 body #contact_email {
-  font-family: "Epilogue";
+  font-family: "Poppins";
   font-weight: 400;
   color: #FFBAAB;
   text-decoration: none;
@@ -356,7 +359,7 @@ body #form {
   box-shadow: 0 0 15px rgba(22, 23, 24, 0.5);
 }
 body #form_title {
-  font-family: "Epilogue";
+  font-family: "Poppins";
   font-weight: 700;
   color: #161718;
   font-size: 1.3em;

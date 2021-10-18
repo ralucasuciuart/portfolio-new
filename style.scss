@@ -59,7 +59,6 @@ body{
         font-size: 2.6em;
         text-decoration: none;
         color: $second;
-        letter-spacing: -1px;
         padding-right: 700px;
     }
     .nav_link {
@@ -67,7 +66,6 @@ body{
         font-size: 1.1em;
         text-decoration: none;
         color: $second;
-        letter-spacing: -1px;
         padding: 0 15px;
         transition: all .3s ease;
     }
@@ -115,7 +113,7 @@ body{
         margin: 0;
     }
     #header_title {
-        @include epiloguereg;
+        @include poppinsreg;
         color: $fourth;
         max-width: 40%;
         text-align: center;
@@ -124,7 +122,7 @@ body{
     }
     #header_links {
         @include flex-row;
-        @include epiloguebold;
+        @include poppinsbold;
         font-size: 1em;
     }
     #header_link_work {
@@ -152,14 +150,18 @@ body{
         color: $second;
         margin: 5% auto 0 auto;
         width: 42px;
+        transition: all .3s ease;
         animation: scroll 3s infinite linear;
     }
-
     @keyframes scroll {
         0% {transform: translateY(0); opacity: 0;}
         25% {transform: translateY(30px); opacity: 1;}
         75% {transform: translateY(30px); opacity: 0;}
         100% {transform: translateY(0); opacity: 0;}
+    }
+    #scroll_mouse:hover {
+        color: $third;
+        transition: all .3s ease;
     }
     // work
     #work {
@@ -287,7 +289,7 @@ body{
         margin: 0;
     }
     .contact_text {
-        @include epiloguereg;
+        @include poppinsreg;
         font-size: 2em;
         color: $third;
         padding: 5px 0;
@@ -310,7 +312,7 @@ body{
         transition: all .3s ease;
     }
     #contact_email {
-        @include epiloguereg;
+        @include poppinsreg;
         color: $second;
         text-decoration: none;
         font-size: 1em;
@@ -333,7 +335,7 @@ body{
         box-shadow: 0 0 15px rgba($main, 0.5);
     }
     #form_title {
-        @include epiloguebold;
+        @include poppinsbold;
         color: $main;
         font-size: 1.3em;
     }
