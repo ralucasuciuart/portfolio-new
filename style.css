@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background-color: #FFC49B;
+  background-color: #FFBAAB;
   overflow-y: scroll;
   margin: 0;
   padding: 0;
@@ -34,7 +34,7 @@ body #nav_name {
   font-weight: 700;
   font-size: 2.6em;
   text-decoration: none;
-  color: #FFC49B;
+  color: #FFBAAB;
   letter-spacing: -1px;
   padding-right: 700px;
 }
@@ -43,7 +43,7 @@ body .nav_link {
   font-weight: 700;
   font-size: 1.1em;
   text-decoration: none;
-  color: #FFC49B;
+  color: #FFBAAB;
   letter-spacing: -1px;
   padding: 0 15px;
   transition: all 0.3s ease;
@@ -61,7 +61,7 @@ body #nav_menu {
 body .nav_icon {
   text-decoration: none;
   padding: 0 15px;
-  color: #FFC49B;
+  color: #FFBAAB;
   transition: all 0.3s ease;
 }
 body .nav_icon_svg:hover {
@@ -122,12 +122,12 @@ body #header_link_work {
   transition: all 0.3s ease;
 }
 body #header_link_work:hover {
-  color: #FFC49B;
+  color: #FFBAAB;
   transition: all 0.3s ease;
 }
 body #header_link_contact {
   text-decoration: none;
-  color: #FFC49B;
+  color: #FFBAAB;
   padding: 5px;
   transition: all 0.3s ease;
 }
@@ -137,7 +137,7 @@ body #header_link_contact:hover {
 }
 body #scroll_mouse {
   text-decoration: none;
-  color: #FFC49B;
+  color: #FFBAAB;
   margin: 5% auto 0 auto;
   width: 42px;
   animation: scroll 3s infinite linear;
@@ -219,7 +219,7 @@ body .work_image_text {
   transform: translate(-50%, -50%);
   font-family: "Poppins";
   font-weight: 700;
-  color: #FFC49B;
+  color: #FFBAAB;
   font-size: 1em;
   text-align: center;
   opacity: 0;
@@ -240,7 +240,7 @@ body #tools {
   max-width: 100%;
   justify-content: space-between;
   padding: 8% 0 0 5%;
-  background: #FFC49B;
+  background: #FFBAAB;
 }
 body #tools_header {
   font-family: "Poppins";
@@ -323,7 +323,7 @@ body #contact_icons {
 }
 body .contact_svg {
   text-decoration: none;
-  color: #FFC49B;
+  color: #FFBAAB;
   transition: all 0.3s ease;
 }
 body .contact_svg:hover {
@@ -333,7 +333,7 @@ body .contact_svg:hover {
 body #contact_email {
   font-family: "Epilogue";
   font-weight: 400;
-  color: #FFC49B;
+  color: #FFBAAB;
   text-decoration: none;
   font-size: 1em;
   transition: all 0.3s ease;
@@ -395,7 +395,7 @@ body #send_btn {
   margin: 20px auto 30px auto;
   border: none;
   border-radius: 50px;
-  background-color: #FFC49B;
+  background-color: #FFBAAB;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -486,7 +486,7 @@ body .footer_svg {
   transition: all 0.3s ease;
 }
 body .footer_svg:hover {
-  color: #FFC49B;
+  color: #FFBAAB;
   transition: all 0.3s ease;
 }
 body #footer_email {
@@ -498,14 +498,14 @@ body #footer_email {
   transition: all 0.3s ease;
 }
 body #footer_email:hover {
-  color: #FFC49B;
+  color: #FFBAAB;
   transition: all 0.3s ease;
 }
 body #top_btn {
   position: fixed;
   right: 30px;
   bottom: 20px;
-  color: #FFC49B;
+  color: #FFBAAB;
   cursor: pointer;
   z-index: 98;
   transition: all 0.3s ease;
