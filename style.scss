@@ -11,14 +11,6 @@ $fourth: #FBFBFB;
     font-family: 'Poppins';
     font-weight: 700;
 }
-@mixin epiloguereg {
-    font-family: 'Epilogue';
-    font-weight: 400;
-}
-@mixin epiloguebold {
-    font-family: 'Epilogue';
-    font-weight: 700;
-}
 @mixin flex-row {
     display: flex;
     flex-direction: row;
@@ -56,10 +48,9 @@ body{
     }
     #nav_name {
         @include poppinsbold;
-        font-size: 2.6em;
+        font-size: 1.5em;
         text-decoration: none;
         color: $second;
-        padding-right: 700px;
     }
     .nav_link {
         @include poppinsbold;
@@ -180,7 +171,7 @@ body{
         @include flex-col;
         align-items: flex-start;
         justify-content: center;
-        margin: 0 auto;
+        margin: 0 auto 60px;
     }
     .work_row {
         @include flex-row;
@@ -240,28 +231,19 @@ body{
     #tools_header {
         @include poppinsbold;
         color: $main;
+        width: 1200px;
         font-size: 1.5em;
         margin: 0;
     }
     #tools_wrap {
         @include flex-col;
-        width: 1200px;
-        margin: 0 auto 60px auto;
+        margin: 0 auto;
     }
     #tools_list {
-        @include flex-col;
-        width: 800px;
-        margin: auto;
-        padding: 0;
-    }
-    #tools_list_1, #tools_list_2 {
-        @include flex-row;
-        justify-content: space-around;
-        align-items: center;
-        padding: 20px 0;
-    }
-    .tools_svg {
         color: $main;
+        border-radius: 20px;
+        padding: 5% 10%;
+        margin: 60px auto;
     }
     // contact 
     #contact {
@@ -328,7 +310,7 @@ body{
         justify-content: space-between;
         align-items: center;
         background: $fourth;
-        margin: 0;
+        margin: 0 10% 0 0;
         border-radius: 30px;
         width: 400px;
         height: 500px;
