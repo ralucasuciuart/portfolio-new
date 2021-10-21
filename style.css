@@ -29,15 +29,22 @@ body #navbar {
   z-index: 99;
   background: #161718;
 }
+@media only screen and (max-width: 600px) {
+  body #navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 body #nav_name {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 1.5em;
   text-decoration: none;
   color: #FFBAAB;
 }
 body .nav_link {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 1.1em;
   text-decoration: none;
@@ -72,7 +79,7 @@ body #header {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   background: #161718 url(media/blob.png) no-repeat 50% 100%;
   background-size: 100%;
@@ -96,19 +103,27 @@ body #header_text {
   margin: 0;
 }
 body #header_title {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #FBFBFB;
   max-width: 40%;
   text-align: center;
   font-size: 2em;
   line-height: 1.2em;
+  margin: 0;
+}
+@media only screen and (max-width: 600px) {
+  body #header_title {
+    font-size: 1.8em;
+    max-width: 100%;
+    margin: 10px;
+  }
 }
 body #header_links {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 1em;
 }
@@ -168,14 +183,24 @@ body #work {
   flex-wrap: wrap;
   height: 100%;
   max-width: 100%;
-  padding: 8% 0 0 5%;
+  padding: 8% 0 0 0;
   background-color: #161718;
 }
+@media only screen and (max-width: 600px) {
+  body #work {
+    padding: 0;
+  }
+}
 body #work_header {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #F2EFE9;
   font-size: 1.5em;
+}
+@media only screen and (max-width: 600px) {
+  body #work_header {
+    padding-left: 10px;
+  }
 }
 body #work_section {
   display: flex;
@@ -185,17 +210,21 @@ body #work_section {
   justify-content: center;
   margin: 0 auto 60px;
 }
+@media only screen and (max-width: 600px) {
+  body #work_section {
+    margin: 0 auto;
+  }
+}
 body .work_row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 body .work_post {
   cursor: pointer;
   position: relative;
-  padding: 20px;
   margin: 0;
 }
 body .work_image {
@@ -219,7 +248,7 @@ body .work_image_text {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #FFBAAB;
   font-size: 1em;
@@ -241,28 +270,40 @@ body #tools {
   flex-wrap: wrap;
   max-width: 100%;
   justify-content: space-between;
-  padding: 8% 0 0 5%;
+  padding: 8% 0 0 0;
   background: #FFBAAB;
 }
 body #tools_header {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #161718;
   width: 1200px;
   font-size: 1.5em;
   margin: 0;
 }
+@media only screen and (max-width: 600px) {
+  body #tools_header {
+    width: 100%;
+    padding-left: 10px;
+  }
+}
 body #tools_wrap {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 100%;
   margin: 0 auto;
 }
 body #tools_list {
   color: #161718;
-  border-radius: 20px;
   padding: 5% 10%;
   margin: 60px auto;
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  body #tools_list {
+    padding: 0;
+  }
 }
 body #contact {
   display: flex;
@@ -271,13 +312,18 @@ body #contact {
   height: 80vh;
   max-width: 100%;
   justify-content: space-between;
-  padding: 8% 0 0 5%;
+  padding: 8% 0 0 0;
   margin: 0;
   background: #161718;
 }
 body .contact_wrap {
   width: 1200px;
   margin: 0 auto;
+}
+@media only screen and (max-width: 600px) {
+  body .contact_wrap {
+    width: 100%;
+  }
 }
 body .text_form_wrap {
   display: flex;
@@ -287,19 +333,29 @@ body .text_form_wrap {
   justify-content: space-between;
 }
 body #contact_header {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #F2EFE9;
   font-size: 1.5em;
   margin: 0;
 }
+@media only screen and (max-width: 600px) {
+  body #contact_header {
+    padding-left: 10px;
+  }
+}
 body .contact_text {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 2em;
   color: #F2EFE9;
   padding: 5px 0;
   margin: 0;
+}
+@media only screen and (max-width: 600px) {
+  body .contact_text {
+    text-align: center;
+  }
 }
 body #contact_icons {
   display: flex;
@@ -317,10 +373,11 @@ body .contact_svg {
 }
 body .contact_svg:hover {
   color: #F2EFE9;
+  transform: translateY(-5px);
   transition: all 0.3s ease;
 }
 body #contact_email {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #FFBAAB;
   text-decoration: none;
@@ -344,14 +401,28 @@ body #form {
   height: 500px;
   box-shadow: 0 0 15px rgba(22, 23, 24, 0.5);
 }
+@media only screen and (max-width: 600px) {
+  body #form {
+    width: 90%;
+    margin: 10% auto;
+  }
+  body #contact_section {
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 body #form_title {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #161718;
   font-size: 1.3em;
 }
 body .input {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 0.8em;
   color: #161718;
@@ -363,7 +434,7 @@ body .input {
   width: 80%;
 }
 body #textarea {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 0.8em;
   color: #161718;
@@ -376,7 +447,7 @@ body #textarea {
   height: 160px;
 }
 body #send_btn {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 1em;
   color: #161718;
@@ -404,6 +475,15 @@ body #footer {
   margin-top: 20em;
   padding: 0 15%;
 }
+@media only screen and (max-width: 600px) {
+  body #footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 5%;
+  }
+}
 body #footer_section_1 {
   display: flex;
   flex-direction: row;
@@ -411,18 +491,37 @@ body #footer_section_1 {
   align-items: center;
   justify-content: space-between;
 }
+@media only screen and (max-width: 600px) {
+  body #footer_section_1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 body #footer_name {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   text-decoration: none;
   color: #F2EFE9;
   font-size: 1.7em;
   margin: 0;
 }
+@media only screen and (max-width: 600px) {
+  body #footer_name {
+    font-size: 1.3em;
+  }
+}
 body #footer_divider {
   border-left: 1px solid rgba(242, 239, 233, 0.5);
   height: 7em;
   margin: 0 2em;
+}
+@media only screen and (max-width: 600px) {
+  body #footer_divider {
+    height: 1em;
+    margin: 0 0 0 1em;
+  }
 }
 body #footer_menu {
   display: flex;
@@ -439,13 +538,12 @@ body #footer_menu_links {
   align-items: center;
 }
 body .footer_link, body #footer_repo {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   text-decoration: none;
   color: rgba(242, 239, 233, 0.5);
   font-size: 0.9em;
   margin: 0.2em;
-  text-decoration: none;
   transition: all 0.3s ease;
 }
 body .footer_link:hover {
@@ -453,7 +551,7 @@ body .footer_link:hover {
   transition: all 0.3s ease;
 }
 body #footer_repo:hover {
-  color: #F2EFE9;
+  color: #FFBAAB;
   transition: all 0.3s ease;
 }
 body #footer_section_2 {
@@ -479,7 +577,7 @@ body .footer_svg:hover {
   transition: all 0.3s ease;
 }
 body #footer_email {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 0.9em;
   text-decoration: none;
@@ -498,6 +596,12 @@ body #top_btn {
   cursor: pointer;
   z-index: 98;
   transition: all 0.3s ease;
+}
+@media only screen and (max-width: 600px) {
+  body #top_btn {
+    right: 10px;
+    bottom: 10px;
+  }
 }
 body #top_btn:hover {
   transform: translateY(-10px);

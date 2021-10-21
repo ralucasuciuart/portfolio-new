@@ -4,11 +4,11 @@ $third: #F2EFE9;
 $fourth: #FBFBFB;
 
 @mixin poppinsreg {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 @mixin poppinsbold {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
 @mixin flex-row {
@@ -45,6 +45,9 @@ body{
         position: fixed;
         z-index: 99;
         background: $main;
+    }
+        @media only screen and (max-width:600px) {
+            #navbar{@include flex-col;}
     }
     #nav_name {
         @include poppinsbold;
@@ -84,7 +87,7 @@ body{
         justify-content: center;
         align-items: center;
         height: 100vh;
-        max-width: 100%;
+        width: 100%;
         margin: 0 auto;
         background: $main url(media/blob.png) no-repeat 50% 100%;
         background-size: 100%;
@@ -95,7 +98,7 @@ body{
         justify-content: center;
         align-items: center;
         width: 100%;
-        }
+    }
     #header_text {
         @include flex-col;
         justify-content: center;
@@ -110,6 +113,14 @@ body{
         text-align: center;
         font-size: 2em;
         line-height: 1.2em;
+        margin: 0;
+    }
+        @media only screen and (max-width:600px){
+            #header_title{
+                font-size: 1.8em;
+                max-width: 100%;
+                margin: 10px;
+            }
     }
     #header_links {
         @include flex-row;
@@ -159,29 +170,43 @@ body{
         @include flex-col;
         height: 100%;
         max-width: 100%;
-        padding: 8% 0 0 5%;
+        padding: 8% 0 0 0;
         background-color: $main;
     }
+        @media only screen and (max-width:600px) {
+            #work {
+                padding: 0;
+            }
+        }
     #work_header {
         @include poppinsbold;
         color: $third;
         font-size: 1.5em;
     }
+        @media only screen and (max-width:600px) {
+            #work_header {
+                padding-left: 10px;
+            }
+        }
     #work_section {
         @include flex-col;
         align-items: flex-start;
         justify-content: center;
         margin: 0 auto 60px;
     }
+        @media only screen and (max-width: 600px){
+            #work_section {
+                margin: 0 auto;
+            }
+        }
     .work_row {
         @include flex-row;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
     }
     .work_post {
         cursor: pointer;
         position: relative;
-        padding: 20px;
         margin: 0; 
     }
     .work_image {
@@ -225,7 +250,7 @@ body{
         @include flex-col;
         max-width: 100%;
         justify-content: space-between;
-        padding: 8% 0 0 5%;
+        padding: 8% 0 0 0;
         background: $second;
     }
     #tools_header {
@@ -235,23 +260,30 @@ body{
         font-size: 1.5em;
         margin: 0;
     }
+        @media only screen and (max-width:600px){
+            #tools_header{width: 100%;padding-left: 10px;}
+        }
     #tools_wrap {
         @include flex-col;
+        width: 100%;
         margin: 0 auto;
     }
     #tools_list {
         color: $main;
-        border-radius: 20px;
         padding: 5% 10%;
         margin: 60px auto;
+        width: 100%;
     }
+        @media only screen and (max-width:600px){
+            #tools_list{padding:0;}
+        }
     // contact 
     #contact {
         @include flex-col;
         height: 80vh;
         max-width: 100%;
         justify-content: space-between;
-        padding: 8% 0 0 5%;
+        padding: 8% 0 0 0;
         margin: 0;
         background: $main;
     }
@@ -259,6 +291,9 @@ body{
         width: 1200px;
         margin: 0 auto;
     }
+        @media only screen and (max-width:600px){
+            .contact_wrap{width: 100%;}
+        }
     .text_form_wrap {
         @include flex-row;
         align-items: center;
@@ -270,6 +305,9 @@ body{
         font-size: 1.5em;
         margin: 0;
     }
+        @media only screen and (max-width:600px){
+            #contact_header{padding-left: 10px;}
+        }
     .contact_text {
         @include poppinsreg;
         font-size: 2em;
@@ -277,6 +315,9 @@ body{
         padding: 5px 0;
         margin: 0;
     }
+        @media only screen and (max-width:600px){
+            .contact_text{text-align: center;}
+        }
     #contact_icons {
         @include flex-row;
         align-items: center;
@@ -291,6 +332,7 @@ body{
     }
     .contact_svg:hover {
         color: $third;
+        transform: translateY(-5px);
         transition: all .3s ease;
     }
     #contact_email {
@@ -316,6 +358,18 @@ body{
         height: 500px;
         box-shadow: 0 0 15px rgba($main, 0.5);
     }
+        @media only screen and (max-width:600px){
+            #form{
+                width: 90%;
+                margin: 10% auto;
+            }
+            #contact_section {
+                margin: 10%;
+                @include flex-col;
+                justify-content: center;
+                align-items: center;
+            }
+        }
     #form_title {
         @include poppinsbold;
         color: $main;
@@ -371,10 +425,23 @@ body{
         margin-top: 20em;
         padding: 0 15%;
     }
+        @media only screen and (max-width:600px){
+            #footer{
+                @include flex-row;
+                justify-content: center;
+                padding: 0 5%;
+            }
+        }
     #footer_section_1 {
         @include flex-row;
         align-items: center;
         justify-content: space-between;
+    }
+    @media only screen and (max-width:600px){
+        #footer_section_1 {
+            @include flex-col;
+            justify-content: center;
+        }
     }
     #footer_name {
         @include poppinsbold;
@@ -383,11 +450,22 @@ body{
         font-size: 1.7em;
         margin: 0;
     }
+        @media only screen and (max-width:600px){
+            #footer_name {
+                font-size: 1.3em;
+            }
+        }
     #footer_divider {
         border-left: 1px solid rgba($third, $alpha: 0.5);
         height: 7em;
         margin: 0 2em;
     }
+        @media only screen and (max-width:600px){
+            #footer_divider {
+                height: 1em;
+                margin: 0 0 0 1em;
+            }
+        }
     #footer_menu {
         @include flex-col;
         justify-content: space-between;
@@ -404,7 +482,6 @@ body{
         color: rgba($third, $alpha: 0.5);
         font-size: .9em;
         margin: .2em;
-        text-decoration: none;
         transition: all .3s ease;
     }
     .footer_link:hover {
@@ -412,7 +489,7 @@ body{
         transition: all .3s ease;
     }
     #footer_repo:hover {
-        color: $third;
+        color: $second;
         transition: all .3s ease;
     }
     #footer_section_2 {
@@ -452,6 +529,12 @@ body{
         cursor: pointer;
         z-index: 98;
         transition: all .3s ease;
+    }
+        @media only screen and (max-width:600px) {
+          #top_btn {
+            right: 10px;
+            bottom: 10px;
+          }
     }
     #top_btn:hover {
         transform: translateY(-10px);
